@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: Lab8 API Documentation
+  version: 1.0.0
+  description: This is a simple demonstration of OpenAPI documentation.
+
+servers:
+  - url: http://localhost:10888
+    description: Development Server
+
+tags:
+  - name: Users
+    description: User operations
+
+paths:
+  /users/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+        description: User ID
+    get:
+      tags:
+        - Users
+      description: Retrieve user information by ID
+      responses:
+        '200':
+          description: User found
+        '404':
+          description: User not found
+
+  /users:
+    post:
+      tags:
+        - Users
+      description: Create a new user
+      requestBody:
+        description: User input data
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: './user.json#/definitions/user'
+      responses:
+        '201':
+          description: User successfully created
+        '400':
+          description: Bad request or missing fields
