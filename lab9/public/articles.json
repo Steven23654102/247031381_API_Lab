@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "hello article",
+    "fullText": "This is a full article about a happy dog.",
+    "cover": "/img/dog.jpg"
+  },
+  {
+    "id": 2,
+    "title": "another article",
+    "fullText": "A cute pug deserves its own article.",
+    "cover": "/img/dog1.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "coventry university",
+    "fullText": "How Coventry University became dog-friendly.",
+    "cover": "/img/dog2.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "smart campus",
+    "fullText": "Dogs exploring smart campus tech!",
+    "cover": "/img/dog3.jpg"
+  }
+]
